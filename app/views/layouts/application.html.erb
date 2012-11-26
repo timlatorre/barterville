@@ -16,13 +16,13 @@
               <div class="navbar-inner">
                 <%= link_to "Barterville", root_path,  :class => 'brand' %>
                   <ul class="nav">
-                    <li class="active"> <%= "Welcome, #{@auth.name}" if @auth %> 
-                    <li class="active"> <%= display_links %></li>
-                  </ul>
-              </div>
-            </div>
-          </div>
-      </div>
+                    <li class="active"> <%= "Welcome, #{@auth.name}" if @auth %></li>
+                    <%= display_links %>
+                  </ul><!-- .nav -->
+              </div><!-- .navbar-inner -->
+            </div><!-- .navbar navbar-inverse -->
+          </div><!-- .span12 -->
+      </div><!-- .row -->
 
       <div class="row">
           <div class="span3"> 
