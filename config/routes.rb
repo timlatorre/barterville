@@ -1,4 +1,23 @@
 Barterville::Application.routes.draw do
+
+  root :to => 'home#index'
+  
+  get '/register' => 'register#new'
+  post '/register' => 'register#create'
+
+  get '/login' => 'session#new'
+  post '/login' => 'session#create'
+  delete '/logout' => 'session#destroy'
+
+  get '/profile' => 'users#show'
+  get '/profile/edit' => 'users#edit'
+  post '/profile' => 'users#update'
+
+  # get '/items' => show your items
+  # get '/item/:id' => 'items#show', :as => 'itemprofile'
+
+  # get '/browse' => 'items#index' 
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +67,7 @@ Barterville::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+
 
   # See how all your routes lay out with "rake routes"
 
