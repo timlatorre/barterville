@@ -13,14 +13,14 @@ Barterville::Application.routes.draw do
   get '/profile/edit' => 'users#edit'
   post '/profile' => 'users#update'
 
-  get '/items' => 'items#show'
-  get '/items/edit' => 'items#edit'
-  post '/items' => 'items#update'
-
-  # get '/items' => show your items
-  # get '/item/:id' => 'items#show', :as => 'itemprofile'
+  # get '/items' => 'items#index'
+  # post '/items' => 'items#create'
+  # get '/items/:id' => 'items#show', :as => 'itemprofile'
+  # get '/items/edit' => 'items#edit'
+  # post '/items/edit' => 'items#update'
 
   # get '/browse' => 'items#index' 
+  # get '/search' => 'items#search'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -5,6 +5,9 @@ class ItemsController < ApplicationController
   def show # single item
   end
 
+  def create # single item
+  end
+
   def new # create new item
   end
 
