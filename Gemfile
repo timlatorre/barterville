@@ -12,6 +12,7 @@ gem 'rails-footnotes'
 gem 'ipsum'
 gem 'bcrypt-ruby'
 gem 'kaminari'
+gem 'aws-ses'
 
 # Gems used only for assets and not required
 # in production environments by default.
