@@ -13,6 +13,10 @@ Barterville::Application.routes.draw do
   get '/profile/edit' => 'users#edit'
   post '/profile' => 'users#update'
 
+  get '/items' => 'items#show'
+  get '/items/edit' => 'items#edit'
+  post '/items' => 'items#update'
+
   # get '/items' => show your items
   # get '/item/:id' => 'items#show', :as => 'itemprofile'
 
