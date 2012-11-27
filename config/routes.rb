@@ -11,7 +11,7 @@ Barterville::Application.routes.draw do
 
   get '/profile' => 'users#show'
   get '/profile/edit' => 'users#edit'
-  post '/profile' => 'users#update'
+  put '/profile' => 'users#update'
 
   get '/items' => 'items#show'
   get '/items/edit' => 'items#edit'

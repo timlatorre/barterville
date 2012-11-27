@@ -9,8 +9,14 @@ class UsersController < ApplicationController
   end
 
   def edit
+
   end
 
   def update
+    if @auth.update_attributes(params[:user])
+      redirect_to profile_path
+    else
+      render :edit
+    end
   end
 end
