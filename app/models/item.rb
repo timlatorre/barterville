@@ -15,4 +15,5 @@
 class Item < ActiveRecord::Base
   belongs_to :user
   belongs_to :item_type
+  mount_uploader :photo, PhotoUploader
 end

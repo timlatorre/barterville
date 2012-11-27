@@ -2,6 +2,8 @@ Barterville::Application.routes.draw do
 
   root :to => 'home#index'
   
+  resources :items
+
   get '/register' => 'register#new'
   post '/register' => 'register#create'
 
@@ -14,10 +16,11 @@ Barterville::Application.routes.draw do
   post '/profile' => 'users#update'
 
   # get '/items' => 'items#index'
+  # get '/items/new' => 'items#new'
   # post '/items' => 'items#create'
-  # get '/items/:id' => 'items#show', :as => 'itemprofile'
-  # get '/items/edit' => 'items#edit'
-  # post '/items/edit' => 'items#update'
+  # get '/items/:id' => 'items#show'
+  # get '/items/:id/edit' => 'items#edit'
+  # post '/items/:id/edit' => 'items#update'
 
   # get '/browse' => 'items#index' 
   # get '/search' => 'items#search'
