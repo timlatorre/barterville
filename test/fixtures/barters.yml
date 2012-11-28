@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: barters
+#
+#  id               :integer          not null, primary key
+#  user_id          :integer
+#  receiver_id      :integer
+#  user_item_id     :integer
+#  receiver_item_id :integer
+#  accepted         :boolean
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  receiver_id: 1
+  user_item_id: 1
+  receiver_item_id: 1
+  accepted: false
+
+two:
+  user_id: 1
+  receiver_id: 1
+  user_item_id: 1
+  receiver_item_id: 1
+  accepted: false

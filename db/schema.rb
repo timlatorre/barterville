@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121126205801) do
+ActiveRecord::Schema.define(:version => 20121127233854) do
+
+  create_table "barters", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "receiver_id"
+    t.integer  "user_item_id"
+    t.integer  "receiver_item_id"
+    t.boolean  "accepted"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
 
   create_table "item_types", :force => true do |t|
     t.string   "name"
@@ -24,9 +34,9 @@ ActiveRecord::Schema.define(:version => 20121126205801) do
     t.string   "photo"
     t.text     "description"
     t.integer  "item_type_id"
-    t.integer  "owner_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|

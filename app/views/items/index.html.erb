@@ -1,6 +1,14 @@
- 
-<h1>Items Index page exists</h1> 
 
+<h1>My Items</h1>
+
+<ul>
+<% @auth.items.each do |item| %>
+    <li><%= item.name %></li> | <%= link_to 'View', item %>
+<% end %>
+</ul>
+<br />
+
+<h1>All Available Items</h1>
 <ul>
 <% @items.each do |item| %>
     <li><%= item.name %></li>

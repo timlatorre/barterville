@@ -10,7 +10,7 @@ class ItemsController < ApplicationController
   end
 
   def create
-    @item = Item.create(params[:item])
+    @auth.items << Item.create(params[:item])
     redirect_to items_path
   end
 

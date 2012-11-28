@@ -7,9 +7,9 @@
 #  photo        :string(255)
 #  description  :text
 #  item_type_id :integer
-#  owner_id     :integer
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
+#  user_id      :integer
 #
 
 class Item < ActiveRecord::Base
