@@ -1,1 +1,6 @@
-User - show page
+<div class='profile'>
+  <h1><%= @auth.name %></h1>
+      <%= image_tag(@auth.photo_url) %>
+      <div class="clear"></div>
+      <%= link_to "edit profile", profile_edit_path %>
+</div><!-- .profile -->
