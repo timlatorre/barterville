@@ -15,7 +15,11 @@
 
 <h4>Add a photo</h4>
  <div class='field'>
-    <%= f.file_field :photo %>
+    <%= label_tag :local %>
+    <%= f.file_field :photo %><br>
+    <%= label_tag :remote %>
+    <%= f.text_field :remote_photo_url %><br>
+    Current photo (if any):<br>
     <%= image_tag(@auth.photo_url) if @auth.photo? %>
   </div>
 
