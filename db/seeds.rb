@@ -1,7 +1,25 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+# User.delete_all
+# Item.delete_all
+
+
+
+
+
+# ('A'..'Z').each do |letter|
+#   c = Creature.create(:creature_type => creature_types.sample, :name => letter, :weapon => weapons.sample, :password => 'a', :password_confirmation => 'a')
+# end #programatically writing a seed file and picks random weapon from the array above
+
+# 25.times do |x|
+#   Message.create(:message_text => 10.sentences, :sender_id => Creature.all.sample.id, :receiver_id => Creature.all.sample.id)
+# end
+
+
+
+# ItemType.delete_all
+
+# item_types = ['boat', 'car', 'bike', 'camera', 'cell phone']
+
+# it1 = ItemType.create(:name => 'Boat')
+# it2 = ItemType.create(:name => 'Car')
+# it3 = ItemType.create(:name => 'Camera')
+# it4 = ItemType.create(:name => 'Cell Phone')
