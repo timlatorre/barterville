@@ -3,7 +3,8 @@ Barterville::Application.routes.draw do
   root :to => 'home#index'
   
   resources :items
-  resources :barters 
+  
+  resources :barters
 
   get '/register' => 'register#new'
   post '/register' => 'register#create'
