@@ -1,1 +1,28 @@
-User partial exists
+<%= form_for @auth, :url => '/profile' do |f| %>
+
+<h3>Name: <%= @auth.name %></h3>
+
+  <div class='field'>
+    <%= label_tag :password %>
+    <%= f.password_field :password %>
+  </div>
+
+  <div class='field'>
+    <%= label_tag :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+
+<h4>Add a photo</h4>
+ <div class='field'>
+    <%= label_tag :local %>
+    <%= f.file_field :photo %><br>
+    <%= label_tag :remote %>
+    <%= f.text_field :remote_photo_url %><br>
+    Current photo (if any):<br>
+    <%= image_tag(@auth.photo_url) if @auth.photo? %>
+  </div>
+
+  <div class='field'>
+    <%= f.submit %>
+  </div>
+<% end %>

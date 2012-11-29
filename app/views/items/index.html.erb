@@ -13,6 +13,8 @@
 <% @items.each do |item| %>
     <li><%= item.name %></li>
     <li><%= item.description %></li> 
+    <li> <%=  image_tag item.photo %>  </li>
+    <li><%= link_to 'View', item %> | <%= link_to 'Edit', edit_item_path(item) %> |  <%= link_to 'Delete', item, method: :delete, data: { confirm: 'Are you sure you want to delet your item?' } %> </li>
 <% end %>
 </ul> 
 <br />
